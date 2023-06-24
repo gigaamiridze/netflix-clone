@@ -1,5 +1,11 @@
+import { AiOutlineSearch } from 'react-icons/ai';
+import { IoMdNotifications } from 'react-icons/io';
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { NetflixLogo } from '../assets';
-import { NavbarContainer, LeftContent, RightContent, Logo, Nav } from '../components';
+import { 
+  NavbarContainer, LeftContent, RightContent, 
+  Logo, Nav, ProfileImg, MenuWrapper, Options 
+} from '../components';
 
 function Navbar() {
   return (
@@ -18,7 +24,19 @@ function Navbar() {
           </ul>
         </Nav>
       </LeftContent>
-      <RightContent></RightContent>
+      <RightContent>
+        <AiOutlineSearch />
+        <span>KID</span>
+        <IoMdNotifications />
+        <ProfileImg src='https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' alt='Profile' />
+        <MenuWrapper>
+          <MdOutlineKeyboardArrowDown />
+          <Options>
+            <span>Settings</span>
+            <span>Log out</span>
+          </Options>
+        </MenuWrapper>
+      </RightContent>
     </NavbarContainer>
   )
 }

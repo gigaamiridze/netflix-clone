@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     ${({ theme }) => css`
       font-family: ${theme.fonts.primary};
-      background-color: ${theme.colors.main};
+      color: ${theme.colors.white};
     `}
   }
 `;
