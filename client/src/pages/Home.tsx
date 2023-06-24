@@ -1,6 +1,8 @@
+import { Navbar } from '../layouts';
+
 function Home() {
   return (
-    <div>Home</div>
+    <Navbar />
   )
 }
 
