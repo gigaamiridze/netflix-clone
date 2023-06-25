@@ -7,4 +7,5 @@ export const theme = {
   fonts: {
     primary: "'Roboto', sans-serif",
   },
+  transition: 'all 0.3s ease-out',
 }

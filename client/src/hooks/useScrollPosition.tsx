@@ -17,7 +17,7 @@ function useScrollPosition() {
     return () => window.removeEventListener('scroll', updateScroll);
   }, []);
 
-  return isScrolled;
+  return { isScrolled };
 }
 
 export default useScrollPosition;
