@@ -8,6 +8,7 @@ interface IColors {
   white: string;
   black: string;
   main: string;
+  lightGray: string;
 }
 
 interface IFonts {

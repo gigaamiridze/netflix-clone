@@ -16,6 +16,12 @@ const Info = styled.div`
   p {
     line-height: 20px;
   }
+
+  div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
 `;
 
 export default Info;

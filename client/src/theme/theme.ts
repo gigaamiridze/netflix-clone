@@ -3,6 +3,7 @@ export const theme = {
     white: '#ffffff',
     black: '#000000',
     main: '#151515',
+    lightGray: '#b1b1b1',
   },
   fonts: {
     primary: "'Roboto', sans-serif",

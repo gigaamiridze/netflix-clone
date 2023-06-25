@@ -24,10 +24,4 @@ export const NavbarContainer = styled.div<INavbarProps>`
 export const FeaturedContainer = styled.div`
   height: 90vh;
   position: relative;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 `;
