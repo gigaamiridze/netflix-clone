@@ -1,6 +1,7 @@
 import { BsPlayFill } from 'react-icons/bs';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { IFeaturedProps } from '../interfaces';
+import { categories } from '../data';
 import { FeaturedContainer, Category, CoverImg, Info, PlayButton, InfoButton } from '../components';
 
 function Featured({ type }: IFeaturedProps) {
@@ -10,20 +11,13 @@ function Featured({ type }: IFeaturedProps) {
         <Category>
           <h3>{type === 'movie' ? 'Movies' : 'Series'}</h3>
           <select name='genre' id='genre'>
-            <option>Genre</option>
-            <option value='adventure'>Adventure</option>
-            <option value='comedy'>Comedy</option>
-            <option value='crime'>Crime</option>
-            <option value='fantasy'>Fantasy</option>
-            <option value='historical'>Historical</option>
-            <option value='horror'>Horror</option>
-            <option value='romance'>Romance</option>
-            <option value='sci-fi'>Sci-fi</option>
-            <option value='thriller'>Thriller</option>
-            <option value='western'>Western</option>
-            <option value='animation'>Animation</option>
-            <option value='drama'>Drama</option>
-            <option value='documentary'>Documentary</option>
+            {categories.map((category, index) => {
+              const { value, title } = category;
+
+              return (
+                <option key={index} value={value}>{title}</option>
+              )
+            })}
           </select>
         </Category>
       )}
