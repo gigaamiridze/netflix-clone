@@ -20,3 +20,14 @@ export const NavbarContainer = styled.div<INavbarProps>`
   top: 0;
   z-index: 100;
 `;
+
+export const FeaturedContainer = styled.div`
+  height: 90vh;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;

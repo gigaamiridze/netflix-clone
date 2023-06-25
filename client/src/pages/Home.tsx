@@ -1,8 +1,11 @@
-import { Navbar } from '../layouts';
+import { Navbar, Featured } from '../layouts';
 
 function Home() {
   return (
-    <Navbar />
+    <>
+      <Navbar />
+      <Featured />
+    </>
   )
 }
 
