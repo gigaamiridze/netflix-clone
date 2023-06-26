@@ -1,10 +1,11 @@
-import { Navbar, Featured } from '../layouts';
+import { Navbar, Featured, List } from '../layouts';
 
 function Home() {
   return (
     <>
       <Navbar />
       <Featured />
+      <List />
     </>
   )
 }

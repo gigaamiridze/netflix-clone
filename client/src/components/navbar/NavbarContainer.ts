@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { INavbarProps } from '../../interfaces';
 
-export const NavbarContainer = styled.div<INavbarProps>`
+const NavbarContainer = styled.div<INavbarProps>`
   ${({ isScrolled, theme }) => css`
     ${isScrolled 
       ? css`background-color: ${theme.colors.main};` 
@@ -21,7 +21,4 @@ export const NavbarContainer = styled.div<INavbarProps>`
   z-index: 100;
 `;
 
-export const FeaturedContainer = styled.div`
-  height: 90vh;
-  position: relative;
-`;
+export default NavbarContainer;
