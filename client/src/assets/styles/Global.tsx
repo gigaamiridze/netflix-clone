@@ -48,8 +48,9 @@ const GlobalStyles = createGlobalStyle`
   // Element styles
   body {
     ${({ theme }) => css`
-      font-family: ${theme.fonts.primary};
+      background-color: ${theme.colors.main};
       color: ${theme.colors.white};
+      font-family: ${theme.fonts.primary};
     `}
   }
 `;
