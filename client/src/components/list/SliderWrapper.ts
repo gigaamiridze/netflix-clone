@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { ISliderProps } from '../../interfaces';
 
-const SliderWrapper = styled.div`
+const SliderWrapper = styled.div<ISliderProps>`
   position: relative;
 
   svg {
@@ -19,6 +20,7 @@ const SliderWrapper = styled.div`
 
     &:first-child {
       left: 0;
+      display: ${({ isMoved }) => !isMoved ? 'none' : 'block'};
     }
 
     &:last-child {
