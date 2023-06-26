@@ -1,4 +1,5 @@
-import { ListContainer, SliderWrapper } from '../components';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { ListContainer, SliderWrapper, Items } from '../components';
 import { ListItem } from '.';
 
 function List() {
@@ -7,13 +8,15 @@ function List() {
   return (
     <ListContainer>
       <h3>Continue to watch</h3>
-      <div>
-        <SliderWrapper>
+      <SliderWrapper>
+        <IoIosArrowBack />
+        <Items>
           {items.map((item, index) => (
             <ListItem key={index} />
           ))}
-        </SliderWrapper>
-      </div>
+        </Items>
+        <IoIosArrowForward />
+      </SliderWrapper>
     </ListContainer>
   )
 }

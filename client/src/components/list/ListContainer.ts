@@ -11,10 +11,6 @@ const ListContainer = styled.div`
     font-weight: 500;
     margin: 0 0 20px 50px;
   }
-
-  div {
-    position: relative;
-  }
 `;
 
 export default ListContainer;
