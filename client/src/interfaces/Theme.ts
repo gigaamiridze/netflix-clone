@@ -9,6 +9,7 @@ interface IColors {
   black: string;
   main: string;
   transparentBlack: string;
+  gray: string;
   lightGray: string;
 }
 
