@@ -4,7 +4,7 @@ import { ISliderProps } from '../../interfaces';
 const SliderWrapper = styled.div<ISliderProps>`
   position: relative;
 
-  svg {
+  .arrow-icon {
     ${({ theme }) => css`
       background-color: ${theme.colors.transparentBlack};
       color: ${theme.colors.white};

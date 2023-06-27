@@ -5,7 +5,7 @@ const Items = styled.div`
   margin-left: 50px;
   display: flex;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 5px;
   transform: translateX(0px);
   transition: ${({ theme }) => theme.transition};
 `;

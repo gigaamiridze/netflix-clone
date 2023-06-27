@@ -16,11 +16,11 @@ function List() {
       const distance = listRef.current.getBoundingClientRect().x - 50;
 
       if (direction === 'left' && slideNumber > 0) {
-        listRef.current.style.transform = `translateX(${240 + distance}px)`;
+        listRef.current.style.transform = `translateX(${230 + distance}px)`;
         setSlideNumber(slideNumber - 1);
       }
       if (direction === 'right' && slideNumber < 5) {
-        listRef.current.style.transform = `translateX(${-240 + distance}px)`;
+        listRef.current.style.transform = `translateX(${-230 + distance}px)`;
         setSlideNumber(slideNumber + 1);
       }
     }
@@ -30,7 +30,10 @@ function List() {
     <ListContainer>
       <h3>Continue to watch</h3>
       <SliderWrapper isMoved={isMoved}>
-        <IoIosArrowBack onClick={() => handleClick('left')} />
+        <IoIosArrowBack 
+          className='arrow-icon'
+          onClick={() => handleClick('left')} 
+        />
         <Items ref={listRef}>
           {items.map((item, index) => (
             <ListItem 
@@ -39,7 +42,10 @@ function List() {
             />
           ))}
         </Items>
-        <IoIosArrowForward onClick={() => handleClick('right')} />
+        <IoIosArrowForward 
+          className='arrow-icon'
+          onClick={() => handleClick('right')} 
+        />
       </SliderWrapper>
     </ListContainer>
   )

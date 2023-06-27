@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 
 const ItemContainer = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.main};
+    background-color: ${theme.colors.main};
+    color: ${theme.colors.white};
   `}
   width: 225px;
   height: 120px;
