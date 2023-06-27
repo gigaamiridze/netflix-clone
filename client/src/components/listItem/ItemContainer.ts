@@ -9,6 +9,12 @@ const ItemContainer = styled.div`
   height: 120px;
   overflow: hidden;
   cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export default ItemContainer;
