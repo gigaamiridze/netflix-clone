@@ -33,7 +33,10 @@ function List() {
         <IoIosArrowBack onClick={() => handleClick('left')} />
         <Items ref={listRef}>
           {items.map((item, index) => (
-            <ListItem key={index} />
+            <ListItem 
+              key={index} 
+              index={index}
+            />
           ))}
         </Items>
         <IoIosArrowForward onClick={() => handleClick('right')} />

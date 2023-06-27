@@ -15,6 +15,20 @@ const ItemContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  &:hover {
+    width: 325px;
+    height: 300px;
+    position: absolute;
+    top: -150px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+
+    img {
+      height: 140px;
+    }
+  }
 `;
 
 export default ItemContainer;
