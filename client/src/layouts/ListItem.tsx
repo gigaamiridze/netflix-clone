@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { BsPlayFill } from 'react-icons/bs';
 import { MdOutlineAdd } from 'react-icons/md';
 import { AiOutlineLike, AiOutlineDislike } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 import { IListItemProps } from '../interfaces';
 import { ItemContainer, ItemInfo, Icons, Details } from '../components';
 
 function ListItem({ index }: IListItemProps) {
   const [isHovered, setIsHovered] = useState<boolean>(true);
+  const navigate = useNavigate();
   const distance = index * 225 - 50 + index * 2.5;
   const trailer = 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761';
 
@@ -22,7 +24,7 @@ function ListItem({ index }: IListItemProps) {
           <video src={trailer} autoPlay loop />
           <ItemInfo>
             <Icons>
-              <BsPlayFill />
+              <BsPlayFill onClick={() => navigate('/video')} />
               <MdOutlineAdd />
               <AiOutlineLike />
               <AiOutlineDislike />

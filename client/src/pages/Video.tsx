@@ -1,10 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 import { VideoContainer, Back } from '../components';
 
 function Video() {
+  const navigate = useNavigate();
+
   return (
     <VideoContainer>
-      <Back>
+      <Back onClick={() => navigate('/')}>
         <IoIosArrowBack />
         <span>Home</span>
       </Back>
