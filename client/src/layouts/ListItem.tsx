@@ -29,6 +29,11 @@ function ListItem({ index }: IListItemProps) {
             <span>+16</span>
             <span>1999</span>
           </Details>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium hic rem eveniet error possimus, neque ex doloribus.
+          </p>
+          <h6>Action</h6>
         </ItemInfo>
       )}
     </ItemContainer>
