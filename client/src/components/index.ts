@@ -1,4 +1,5 @@
 export * from './featured';
 export * from './navbar';
+export * from './video';
 export * from './listItem';
 export * from './list';
