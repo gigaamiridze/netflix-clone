@@ -1,6 +1,10 @@
+import { RegisterContainer } from '../components';
+
 function Register() {
   return (
-    <div>Register</div>
+    <RegisterContainer>
+      
+    </RegisterContainer>
   )
 }
 
