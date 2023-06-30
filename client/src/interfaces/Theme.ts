@@ -11,6 +11,7 @@ interface IColors {
   transparentBlack: string;
   gray: string;
   lightGray: string;
+  red: string;
 }
 
 interface IFonts {

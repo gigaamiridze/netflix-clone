@@ -6,6 +6,7 @@ export const theme = {
     transparentBlack: 'rgb(22, 22, 22, 0.3)',
     gray: 'gray',
     lightGray: '#b1b1b1',
+    red: '#e50914',
   },
   fonts: {
     primary: "'Roboto', sans-serif",

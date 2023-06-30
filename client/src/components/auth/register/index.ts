@@ -1,1 +1,1 @@
-export { default as RegisterContainer } from './RegisterContainer';
+export * from './Container';

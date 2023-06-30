@@ -14,7 +14,11 @@ function Navbar() {
   return (
     <NavbarContainer isScrolled={isScrolled}>
       <LeftContent>
-        <Logo src={NetflixLogo} alt='Netflix' />
+        <Logo 
+          src={NetflixLogo} 
+          isHomeContent={true}
+          alt='netflix' 
+        />
         <Nav>
           <ul>
             <li>
@@ -31,7 +35,7 @@ function Navbar() {
         <AiOutlineSearch />
         <span>KID</span>
         <IoMdNotifications />
-        <ProfileImg src='https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' alt='Profile' />
+        <ProfileImg src='https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' alt='profile' />
         <MenuWrapper>
           <MdOutlineKeyboardArrowDown />
           <Options>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const RegisterContainer = styled.div`
+export const RegisterContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background: 
@@ -19,4 +19,9 @@ const RegisterContainer = styled.div`
   position: relative;
 `;
 
-export default RegisterContainer;
+export const TopContainer = styled.div`
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
