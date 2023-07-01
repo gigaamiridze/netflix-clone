@@ -25,3 +25,29 @@ export const TopContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const CenterContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+`;
