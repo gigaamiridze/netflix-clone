@@ -12,6 +12,7 @@ interface IColors {
   gray: string;
   lightGray: string;
   red: string;
+  darkRed: string;
 }
 
 interface IFonts {

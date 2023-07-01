@@ -7,6 +7,7 @@ export const theme = {
     gray: 'gray',
     lightGray: '#b1b1b1',
     red: '#e50914',
+    darkRed: '#c11119',
   },
   fonts: {
     primary: "'Roboto', sans-serif",

@@ -1,4 +1,4 @@
-import { RegisterContainer, TopContainer, Logo } from '../components';
+import { RegisterContainer, TopContainer, Logo, SignInButton } from '../components';
 import { NetflixLogo } from '../assets';
 
 function Register() {
@@ -10,6 +10,7 @@ function Register() {
           isHomeContent={false}
           alt='netflix' 
         />
+        <SignInButton>Sign In</SignInButton>
       </TopContainer>
     </RegisterContainer>
   )
