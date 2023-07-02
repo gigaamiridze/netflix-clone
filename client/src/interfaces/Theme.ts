@@ -12,6 +12,8 @@ interface IColors {
   transparentGray: string;
   gray: string;
   lightGray: string;
+  darkGray: string;
+  darkLiver: string;
   red: string;
   darkRed: string;
 }

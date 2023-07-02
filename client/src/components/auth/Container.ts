@@ -32,7 +32,7 @@ export const TopContainer = styled.div<IAuthContainerProps>`
   z-index: 10;
 `;
 
-const CenterContainer = styled.div`
+export const CenterContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -67,20 +67,5 @@ export const RegisterCenterContainer = styled(CenterContainer)`
     align-items: center;
     justify-content: center;
     column-gap: 8px;
-  }
-`;
-
-export const LoginCenterContainer = styled(CenterContainer)`
-  form {
-    background-color: rgba(0, 0, 0, .75);
-    padding: 60px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-
-    h2 {
-      font-size: 32px;
-      font-weight: 500;
-    }
   }
 `;
