@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
-import { NetflixLogo } from '../assets';
+import { Logo } from '../layouts';
 import {
-  RegisterContainer, TopContainer, CenterContainer, Logo,
+  RegisterContainer, TopContainer, CenterContainer,
   SignInButton, RegisterInput, RegisterButton
 } from '../components';
 
@@ -23,11 +23,7 @@ function Register() {
   return (
     <RegisterContainer>
       <TopContainer>
-        <Logo
-          src={NetflixLogo}
-          isHomeContent={false}
-          alt='netflix'
-        />
+        <Logo isNavbarContent={false} />
         <SignInButton>Sign In</SignInButton>
       </TopContainer>
       <CenterContainer>

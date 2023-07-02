@@ -1,11 +1,11 @@
 import { AiOutlineSearch } from 'react-icons/ai';
 import { IoMdNotifications } from 'react-icons/io';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
-import { NetflixLogo } from '../assets';
 import { useScrollPosition } from '../hooks';
+import { Logo } from '.';
 import { 
   NavbarContainer, LeftContent, RightContent, 
-  Logo, Nav, ProfileImg, MenuWrapper, Options 
+  Nav, ProfileImg, MenuWrapper, Options 
 } from '../components';
 
 function Navbar() {
@@ -14,11 +14,7 @@ function Navbar() {
   return (
     <NavbarContainer isScrolled={isScrolled}>
       <LeftContent>
-        <Logo 
-          src={NetflixLogo} 
-          isHomeContent={true}
-          alt='netflix' 
-        />
+        <Logo isNavbarContent={true} />
         <Nav>
           <ul>
             <li>

@@ -20,10 +20,13 @@ export const RegisterContainer = styled.div`
 `;
 
 export const TopContainer = styled.div`
-  padding: 20px 170px;
+  width: 100%;
+  padding: 21px 170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  z-index: 10;
 `;
 
 export const CenterContainer = styled.div`

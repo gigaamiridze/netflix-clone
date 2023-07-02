@@ -1,3 +1,3 @@
 export interface ILogoProps {
-  isHomeContent: boolean;
+  isNavbarContent: boolean;
 }
