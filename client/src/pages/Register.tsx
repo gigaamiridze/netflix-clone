@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { Logo } from '../layouts';
 import {
-  AuthContainer, TopContainer, CenterContainer,
+  AuthContainer, TopContainer, RegisterCenterContainer,
   SignInButton, RegisterInput, RegisterButton
 } from '../components';
 
@@ -26,7 +26,7 @@ function Register() {
         <Logo isNavbarContent={false} />
         <SignInButton>Sign In</SignInButton>
       </TopContainer>
-      <CenterContainer>
+      <RegisterCenterContainer>
         <h1>Unlimited movies, TV shows, and more</h1>
         <h3>Watch anywhere. Cancel anytime.</h3>
         <p>Ready to watch? Enter your email to create or restart your membership.</p>
@@ -57,7 +57,7 @@ function Register() {
             </RegisterButton>
           </form>
         )}
-      </CenterContainer>
+      </RegisterCenterContainer>
     </AuthContainer>
   )
 }

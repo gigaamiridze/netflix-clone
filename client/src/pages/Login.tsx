@@ -1,5 +1,5 @@
 import { Logo } from '../layouts';
-import { AuthContainer, TopContainer } from '../components';
+import { AuthContainer, LoginCenterContainer, TopContainer } from '../components';
 
 function Login() {
   return (
@@ -7,6 +7,11 @@ function Login() {
       <TopContainer isRegisterContent={false}>
         <Logo isNavbarContent={false} />
       </TopContainer>
+      <LoginCenterContainer>
+        <form>
+          <h2>Sign In</h2>
+        </form>
+      </LoginCenterContainer>
     </AuthContainer>
   )
 }

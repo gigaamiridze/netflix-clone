@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { IAuthContainerProps } from '../../../interfaces';
+import { IAuthContainerProps } from '../../interfaces';
 
 export const AuthContainer = styled.div`
   width: 100vw;
@@ -32,16 +32,19 @@ export const TopContainer = styled.div<IAuthContainerProps>`
   z-index: 10;
 `;
 
-export const CenterContainer = styled.div`
+const CenterContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+export const RegisterCenterContainer = styled(CenterContainer)`
+  flex-direction: column;
   row-gap: 25px;
 
   h1 {
@@ -64,5 +67,20 @@ export const CenterContainer = styled.div`
     align-items: center;
     justify-content: center;
     column-gap: 8px;
+  }
+`;
+
+export const LoginCenterContainer = styled(CenterContainer)`
+  form {
+    background-color: rgba(0, 0, 0, .75);
+    padding: 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+    }
   }
 `;
