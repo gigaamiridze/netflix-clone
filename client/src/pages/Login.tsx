@@ -1,6 +1,13 @@
+import { Logo } from '../layouts';
+import { AuthContainer, TopContainer } from '../components';
+
 function Login() {
   return (
-    <div>Login</div>
+    <AuthContainer>
+      <TopContainer isRegisterContent={false}>
+        <Logo isNavbarContent={false} />
+      </TopContainer>
+    </AuthContainer>
   )
 }
 

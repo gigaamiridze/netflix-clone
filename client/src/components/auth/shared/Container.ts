@@ -1,17 +1,18 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { IAuthContainerProps } from '../../../interfaces';
 
-export const RegisterContainer = styled.div`
+export const AuthContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background: 
     linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 5%,
       rgba(0, 0, 0, 0.1) 50%
     ),
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 5%,
       rgba(0, 0, 0, 0.1) 50%
     ),
     url('src/assets/images/cover.jpg');
@@ -19,9 +20,11 @@ export const RegisterContainer = styled.div`
   position: relative;
 `;
 
-export const TopContainer = styled.div`
+export const TopContainer = styled.div<IAuthContainerProps>`
+  ${({ isRegisterContent }) => css`
+    padding: 21px ${isRegisterContent ? '170px' : '40px'};
+  `}
   width: 100%;
-  padding: 21px 170px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { Logo } from '../layouts';
 import {
-  RegisterContainer, TopContainer, CenterContainer,
+  AuthContainer, TopContainer, CenterContainer,
   SignInButton, RegisterInput, RegisterButton
 } from '../components';
 
@@ -21,8 +21,8 @@ function Register() {
   }
 
   return (
-    <RegisterContainer>
-      <TopContainer>
+    <AuthContainer>
+      <TopContainer isRegisterContent={true}>
         <Logo isNavbarContent={false} />
         <SignInButton>Sign In</SignInButton>
       </TopContainer>
@@ -58,7 +58,7 @@ function Register() {
           </form>
         )}
       </CenterContainer>
-    </RegisterContainer>
+    </AuthContainer>
   )
 }
 
