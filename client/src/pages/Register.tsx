@@ -1,17 +1,32 @@
+import { useState, useRef } from 'react';
 import { NetflixLogo } from '../assets';
-import { 
-  RegisterContainer, TopContainer, CenterContainer, Logo, 
-  SignInButton, RegisterForm, RegisterInput, RegisterButton 
+import {
+  RegisterContainer, TopContainer, CenterContainer, Logo,
+  SignInButton, RegisterInput, RegisterButton
 } from '../components';
 
 function Register() {
+  const [email, setEmail] = useState<string | undefined>(undefined);
+  const [password, setPassword] = useState<string | undefined>(undefined);
+
+  const emailRef = useRef<HTMLInputElement>(null);
+  const passwordRef = useRef<HTMLInputElement>(null);
+
+  const handleStart = () => {
+    setEmail(emailRef.current?.value);
+  }
+
+  const handleFinish = () => {
+    setPassword(passwordRef.current?.value);
+  }
+
   return (
     <RegisterContainer>
       <TopContainer>
-        <Logo 
-          src={NetflixLogo} 
+        <Logo
+          src={NetflixLogo}
           isHomeContent={false}
-          alt='netflix' 
+          alt='netflix'
         />
         <SignInButton>Sign In</SignInButton>
       </TopContainer>
@@ -19,10 +34,33 @@ function Register() {
         <h1>Unlimited movies, TV shows, and more</h1>
         <h3>Watch anywhere. Cancel anytime.</h3>
         <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        <RegisterForm>
-          <RegisterInput name='email' id='email' placeholder='Email address' />
-          <RegisterButton>Get Started</RegisterButton>
-        </RegisterForm>
+        {!email ? (
+          <div>
+            <RegisterInput
+              type='email'
+              name='email'
+              id='email'
+              placeholder='Email address'
+              ref={emailRef}
+            />
+            <RegisterButton onClick={handleStart}>
+              Get Started
+            </RegisterButton>
+          </div>
+        ) : (
+          <form>
+            <RegisterInput
+              type='password'
+              name='password'
+              id='password'
+              placeholder='Enter your password'
+              ref={passwordRef}
+            />
+            <RegisterButton onClick={handleFinish}>
+              Start
+            </RegisterButton>
+          </form>
+        )}
       </CenterContainer>
     </RegisterContainer>
   )

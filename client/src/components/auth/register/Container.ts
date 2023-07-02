@@ -50,4 +50,13 @@ export const CenterContainer = styled.div`
   p {
     font-size: 20px;
   }
+
+  div, form {
+    width: 45%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
 `;

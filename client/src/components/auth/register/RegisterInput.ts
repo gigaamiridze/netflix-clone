@@ -1,15 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const RegisterForm = styled.form`
-  width: 45%;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 8px;
-`;
-
-export const RegisterInput = styled.input`
+const RegisterInput = styled.input`
   ${({ theme }) => css`
     background-color: ${theme.colors.transparentBlack};
     color: ${theme.colors.white};
@@ -27,3 +18,5 @@ export const RegisterInput = styled.input`
     color: ${({ theme }) => theme.colors.lightGray};
   }
 `;
+
+export default RegisterInput;
