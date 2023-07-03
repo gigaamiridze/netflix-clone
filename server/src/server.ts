@@ -1,11 +1,10 @@
 import { app } from './app';
-
-const port: number = 5000;
+import { PORT } from './config';
 
 const startServer = async () => {
   try {
-    app.listen(port, () => {
-      console.log(`Server listening on port ${port}`);
+    app.listen(PORT, () => {
+      console.log(`Server listening on port ${PORT}`);
     });
   } catch (err) {
     console.error('Failed to start server', err);
