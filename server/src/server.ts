@@ -1,8 +1,11 @@
 import { app } from './app';
 import { PORT } from './config';
+import { connectDB } from './database';
 
 const startServer = async () => {
   try {
+    await connectDB();
+
     app.listen(PORT, () => {
       console.log(`Server listening on port ${PORT}`);
     });
