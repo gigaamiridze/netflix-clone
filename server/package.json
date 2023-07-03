@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Netflix Clone API with Node, Express, MongoDB and Mongoose",
+  "main": "./src/app.ts",
+  "scripts": {
+    "start:dev": "nodemon ./src/app.ts",
+    "start": "node ./dist/app.js",
+    "build": "yarn install && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justtfelix/netflix-clone.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "justtfelix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justtfelix/netflix-clone/issues"
+  },
+  "homepage": "https://github.com/justtfelix/netflix-clone#readme",
+  "engines": {
+    "node": ">=14.20.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
