@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const ListContainer = styled.div`
   width: 100%;
   margin-top: 20px;
-  overflow-x: hidden;
 
   h3 {
     color: ${({ theme }) => theme.colors.white};

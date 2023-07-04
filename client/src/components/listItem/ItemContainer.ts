@@ -17,25 +17,30 @@ const ItemContainer = styled.div`
   }
 
   video {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none;
   }
 
   &:hover {
     width: 325px;
-    height: 300px;
+    height: max-content;
     position: absolute;
-    top: -40px;
+    top: -150px;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
     box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
     border-radius: 6px;
 
     img {
       height: 140px;
+    }
+
+    video {
+      width: 100%;
+      height: 140px;
+      display: block;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 `;

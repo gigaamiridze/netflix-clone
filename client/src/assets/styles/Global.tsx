@@ -52,6 +52,7 @@ const GlobalStyles = createGlobalStyle`
       color: ${theme.colors.white};
       font-family: ${theme.fonts.primary};
     `}
+    overflow-x: hidden;
   }
 `;
 
