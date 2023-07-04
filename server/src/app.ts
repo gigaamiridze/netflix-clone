@@ -1,6 +1,7 @@
-import express, { Application, Request, Response } from 'express';
+import express, { Application } from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
+import { authRouter } from './routes';
 
 export const app: Application = express();
 
@@ -8,6 +9,5 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, World!');
-});
+// Route middlewares
+app.use('/api/auth', authRouter);
